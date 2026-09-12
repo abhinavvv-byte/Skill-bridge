@@ -79,11 +79,11 @@ export function StudentResume() {
                   {mockStudent.university} • {mockStudent.department} • {mockStudent.year}
                 </p>
                 <div className="flex items-center justify-center gap-4 text-xs mt-2 text-slate-500">
-                  <span>alex@example.com</span>
+                  <span>{mockStudent.email || 'amit@example.com'}</span>
                   <span>•</span>
-                  <span>github.com/alex-codes</span>
+                  <span>github.com/{mockStudent.codingProfiles.find(p => p.platform === 'GitHub')?.handle || 'amit-codes'}</span>
                   <span>•</span>
-                  <span>leetcode.com/alexj</span>
+                  <span>leetcode.com/{mockStudent.codingProfiles.find(p => p.platform === 'LeetCode')?.handle || 'amitj'}</span>
                 </div>
               </div>
 

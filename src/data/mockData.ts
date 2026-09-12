@@ -2,7 +2,7 @@ import { Opportunity, Program, StudentProfile, Connect } from '../types';
 
 export const mockStudent: StudentProfile = {
   id: 's1',
-  name: 'Alex Johnson',
+  name: 'Amit Sharma',
   university: 'Tech University',
   department: 'Computer Science',
   year: '3rd Year',
@@ -14,16 +14,16 @@ export const mockStudent: StudentProfile = {
     { skill: 'Cloud', level: 'Missing', score: 10 },
   ],
   codingProfiles: [
-    { platform: 'LeetCode', handle: 'alexj', problemsSolved: 342, rating: '1850' },
-    { platform: 'GitHub', handle: 'alex-codes', problemsSolved: 45, rating: 'Active' },
-    { platform: 'HackerRank', handle: 'alex_hacker', problemsSolved: 120, rating: '5 Star' }
+    { platform: 'LeetCode', handle: 'amitj', problemsSolved: 342, rating: '1850' },
+    { platform: 'GitHub', handle: 'amit-codes', problemsSolved: 45, rating: 'Active' },
+    { platform: 'HackerRank', handle: 'amit_hacker', problemsSolved: 120, rating: '5 Star' }
   ],
   projects: [
     {
       title: 'E-commerce Platform',
       description: 'Full-stack platform with React and Node.js',
       techStack: ['React', 'Node.js', 'MongoDB'],
-      link: 'github.com/alex/ecommerce'
+      link: 'github.com/amit/ecommerce'
     }
   ],
   experience: [

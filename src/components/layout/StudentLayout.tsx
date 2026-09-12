@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Briefcase, GraduationCap, Code2, FolderGit2, UserCircle, Bell, MessageSquare, Menu } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
+import { mockStudent } from '@/src/data/mockData';
 
 export function StudentLayout() {
   const location = useLocation();
@@ -48,11 +49,11 @@ export function StudentLayout() {
         <div className="p-4 border-t border-slate-200">
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold">
-              AJ
+              {mockStudent.name.split(' ').map(n => n[0]).join('')}
             </div>
             <div>
-              <p className="text-sm font-medium">Alex Johnson</p>
-              <p className="text-xs text-slate-500">Tech University</p>
+              <p className="text-sm font-medium">{mockStudent.name}</p>
+              <p className="text-xs text-slate-500">{mockStudent.university}</p>
             </div>
           </div>
         </div>
