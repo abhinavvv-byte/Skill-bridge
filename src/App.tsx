@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { StudentLayout } from './components/layout/StudentLayout';
 import { InstitutionLayout } from './components/layout/InstitutionLayout';
@@ -93,7 +93,7 @@ function Home() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         
@@ -127,6 +127,6 @@ export default function App() {
           <Route path="connects" element={<Placeholder title="Connects" />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
