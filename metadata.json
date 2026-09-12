@@ -1,0 +1,6 @@
+{
+  "name": "Skill Bridge",
+  "description": "A complete student career-development and talent ecosystem platform linking students, institutions, and companies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
