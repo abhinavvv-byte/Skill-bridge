@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Skill Bridge - Page Not Found</title>
+    <script type="text/javascript">
+      // GitHub Pages 404 fallback to redirect to the HashRouter root
+      // This ensures if a user tries to access a path directly (like /student),
+      // they are redirected to /#/student.
+      var pathSegmentsToKeep = 0; // Keeping 0 segments after the repo name
+      var l = window.location;
+      var pathName = l.pathname;
+      var repoName = pathName.split('/')[1]; // Assumes URL is like username.github.io/repo-name/
+      
+      // Basic redirect logic to the HashRouter format
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        '/' + repoName + '/#' + l.pathname.replace('/' + repoName, '') + l.search + l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>

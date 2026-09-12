@@ -12,6 +12,7 @@ import { StudentExperience } from './pages/student/Experience';
 
 import { InstitutionDashboard } from './pages/institution/Dashboard';
 import { CompanyDashboard } from './pages/company/Dashboard';
+import { NotFound } from './pages/NotFound';
 
 import { Button } from './components/ui/Button';
 
@@ -126,6 +127,9 @@ export default function App() {
           <Route path="pipeline" element={<Placeholder title="Pipeline & Matching" />} />
           <Route path="connects" element={<Placeholder title="Connects" />} />
         </Route>
+
+        {/* 404 Catch All */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </HashRouter>
   );
